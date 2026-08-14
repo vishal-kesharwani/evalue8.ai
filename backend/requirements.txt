@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+sqlalchemy[asyncio]
+asyncpg
+alembic
+pydantic>=2
+pydantic-settings
+langgraph
+openai
+anthropic
+faiss-cpu
+pytest
+pytest-asyncio
+httpx

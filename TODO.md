@@ -39,11 +39,14 @@ Verified live: migrated `routing_traces`, generated 5 varied `/route` calls, con
 
 **Not built (intentionally out of scope for this sprint):** cost/time-range filters on the dashboard (only model/domain/outcome text filters — PRD §15 lists cost/time as filter dimensions but exact range-filter UX wasn't specified, deferred), and "routing patterns" / "model usage distribution" as separate metrics (redundant with requests-by-model as currently scoped). Revisit if real usage surfaces a concrete need.
 
-## Later — Weeks 7–8: Product Validation
+## Weeks 7–8: Product Validation — prep done, interviews not started
 
-- [ ] 5–10 user interviews (`PRD.md` §32 questions)
-- [ ] Pricing discussion
-- [ ] Beachhead market decision (see open question in `PROJECT.md`)
+- [x] Interview guide (`docs/user-interview-guide.md`) — PRD.md §32 questions with probes, logistics, opening/closing scripts
+- [x] Outreach templates (`docs/interview-outreach-templates.md`) — for developer friends, cold outreach to small teams/startups, warm intros, follow-ups
+- [x] Response tracker (`docs/user-interview-tracker.xlsx`) — Outreach + Interviews + auto-computing Summary sheets (segment breakdown, willingness-to-pay tallies, pricing preference, design-partner candidates)
+- [ ] **Actually conduct 5–10 user interviews** — this needs you; I can't reach out to real people
+- [ ] Pricing discussion (informed by tracker Summary once interviews are logged)
+- [ ] Beachhead market decision (see open question in `PROJECT.md`) — don't decide off fewer than ~5 logged interviews
 - [ ] Verification domain decision (see open question in `PROJECT.md`)
 
 ## Later — Weeks 9–12: Verification MVP

@@ -47,9 +47,13 @@ Verified end-to-end against a live `docker-compose` stack (2026-08-15):
 
 **Phase 1 (Routing Engine) is now functionally complete.**
 
+### Weeks 7–8 prep (2026-08-15)
+
+Interview materials ready in `docs/`: `user-interview-guide.md` (script + probes), `interview-outreach-templates.md` (recruiting messages), `user-interview-tracker.xlsx` (log + auto-computing summary — segment mix, willingness-to-pay, pricing preference, design-partner candidates). Formulas verified error-free via LibreOffice recalculation.
+
 ## What's next
 
-Weeks 7–8 is product validation (user interviews, pricing, market/verification-domain decisions) — not a coding task, needs you. Engineering-wise, the next thing on the roadmap is Phase 3's verification MVP (Weeks 9–12), but per `PRD.md` §31 that shouldn't start until the validation step picks a domain.
+Conduct the actual 5–10 interviews (needs you — see `docs/user-interview-guide.md`). Once ~5 are logged in the tracker, its Summary sheet informs the beachhead market, pricing, and verification-domain decisions (`PRD.md` §33-34). Engineering-wise, the next thing on the roadmap after that is Phase 3's verification MVP (Weeks 9–12), but per `PRD.md` §31 that shouldn't start until validation picks a domain.
 
 Also still open: if a real Anthropic/OpenAI key becomes available, worth a quick pass to confirm the live classifier path (not just its fallback) actually works end-to-end — untested so far.
 

@@ -39,15 +39,23 @@ Verified live: migrated `routing_traces`, generated 5 varied `/route` calls, con
 
 **Not built (intentionally out of scope for this sprint):** cost/time-range filters on the dashboard (only model/domain/outcome text filters — PRD §15 lists cost/time as filter dimensions but exact range-filter UX wasn't specified, deferred), and "routing patterns" / "model usage distribution" as separate metrics (redundant with requests-by-model as currently scoped). Revisit if real usage surfaces a concrete need.
 
-## Weeks 7–8: Product Validation — prep done, interviews not started
+## Weeks 7–8: Product Validation — prep done, survey not yet sent
 
-- [x] Interview guide (`docs/user-interview-guide.md`) — PRD.md §32 questions with probes, logistics, opening/closing scripts
+Approach: a 3-round funnel rather than one form — discovery first (no product
+mentioned), concept validation second (reveal only the hypothesis the
+discovery data actually points at), pricing last. This replaced an earlier
+single-form draft that mixed all three and risked anchoring every answer to
+an idea nobody had validated yet.
+
+- [x] 1:1 interview guide (`docs/user-interview-guide.md`) — PRD.md §32 questions with probes, logistics, opening/closing scripts
 - [x] Outreach templates (`docs/interview-outreach-templates.md`) — for developer friends, cold outreach to small teams/startups, warm intros, follow-ups
-- [x] Response tracker (`docs/user-interview-tracker.xlsx`) — Outreach + Interviews + auto-computing Summary sheets (segment breakdown, willingness-to-pay tallies, pricing preference, design-partner candidates)
-- [ ] **Actually conduct 5–10 user interviews** — this needs you; I can't reach out to real people
-- [ ] Pricing discussion (informed by tracker Summary once interviews are logged)
-- [ ] Beachhead market decision (see open question in `PROJECT.md`) — don't decide off fewer than ~5 logged interviews
-- [ ] Verification domain decision (see open question in `PROJECT.md`)
+- [x] Response tracker (`docs/user-interview-tracker.xlsx`) — Outreach + Interviews + auto-computing Summary sheets
+- [x] **Round 1 discovery survey** (`docs/ai-builders-google-form.md`) — pure pain-discovery, zero product/pricing mentions, ready to paste into Google Forms, includes a pain-matrix analysis framework
+- [x] **Round 2/3 concept + pricing survey** (`docs/ai-builders-google-form-round2-concept-and-pricing.md`) — drafted but explicitly held back until Round 1's data picks a hypothesis to validate
+- [ ] **Actually send Round 1 to the AI builders community and/or run 1:1 interviews** — this needs you; I can't reach real people or post to a community
+- [ ] Read Round 1 results, build the pain matrix, decide which hypothesis (routing / verification / other) Round 2 should reveal
+- [ ] Send Round 2 (concept validation, no pricing) to responders who opted into follow-up
+- [ ] Only then: Round 3 pricing, beachhead market decision, verification domain decision (see open questions in `PROJECT.md`) — don't decide off a small or single-round sample
 
 ## Later — Weeks 9–12: Verification MVP
 

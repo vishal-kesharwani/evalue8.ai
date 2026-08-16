@@ -49,11 +49,16 @@ Verified end-to-end against a live `docker-compose` stack (2026-08-15):
 
 ### Weeks 7–8 prep (2026-08-15)
 
-Interview materials ready in `docs/`: `user-interview-guide.md` (script + probes), `interview-outreach-templates.md` (recruiting messages), `user-interview-tracker.xlsx` (log + auto-computing summary — segment mix, willingness-to-pay, pricing preference, design-partner candidates). Formulas verified error-free via LibreOffice recalculation.
+Interview materials ready in `docs/`: `user-interview-guide.md` (1:1 script + probes), `interview-outreach-templates.md` (recruiting messages), `user-interview-tracker.xlsx` (log + auto-computing summary). Formulas verified error-free via LibreOffice recalculation.
+
+Validation approach settled into a **3-round funnel** rather than one survey, to avoid anchoring responses to a product idea before it's validated:
+- **Round 1 — discovery** (`ai-builders-google-form.md`): what problems AI builders actually have and how they solve them today. Zero mention of routing, verification, or pricing.
+- **Round 2 — concept validation** (`ai-builders-google-form-round2-concept-and-pricing.md`, held back): reveal only whichever hypothesis Round 1's pain matrix points at.
+- **Round 3 — pricing**: only after Round 2 confirms the concept lands.
 
 ## What's next
 
-Conduct the actual 5–10 interviews (needs you — see `docs/user-interview-guide.md`). Once ~5 are logged in the tracker, its Summary sheet informs the beachhead market, pricing, and verification-domain decisions (`PRD.md` §33-34). Engineering-wise, the next thing on the roadmap after that is Phase 3's verification MVP (Weeks 9–12), but per `PRD.md` §31 that shouldn't start until validation picks a domain.
+Send Round 1 to the AI builders community and/or run 1:1 interviews (needs you — I can't reach real people). Read results as a pain matrix (pain × frequency × current workaround × existing tool coverage — see the analysis section in `ai-builders-google-form.md`), not raw percentages. That matrix picks which hypothesis Round 2 reveals — don't skip straight to Round 2/3 material. Once the beachhead market, pricing, and verification-domain questions resolve (`PRD.md` §33-34), the next engineering step is Phase 3's verification MVP (Weeks 9–12), but per `PRD.md` §31 that shouldn't start until validation picks a domain.
 
 Also still open: if a real Anthropic/OpenAI key becomes available, worth a quick pass to confirm the live classifier path (not just its fallback) actually works end-to-end — untested so far.
 

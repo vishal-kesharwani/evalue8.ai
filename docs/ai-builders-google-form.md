@@ -46,7 +46,7 @@ the dedicated field at the end instead). "Limit to 1 response" → your call.
 ## — SECTION: Who are you —
 
 **Q1. What best describes your current work with AI/LLMs?**
-*Type: Multiple choice*
+*Type: Multiple choice · Required*
 - Building an AI product currently in production
 - Building an AI feature internally
 - Building/prototyping an AI product
@@ -55,14 +55,14 @@ the dedicated field at the end instead). "Limit to 1 response" → your call.
 - Other
 
 **Q2. How large is the team working on the AI product/feature?**
-*Type: Multiple choice*
+*Type: Multiple choice · Required*
 - Just me
 - 2–5
 - 6–20
 - 20+
 
 **Q3. What industry/domain are you building for?**
-*Type: Multiple choice*
+*Type: Multiple choice · Required*
 - Developer tools
 - Fintech
 - Healthcare
@@ -83,23 +83,23 @@ the dedicated field at the end instead). "Limit to 1 response" → your call.
 ## — SECTION: How they build —
 
 **Q4. What does your current AI/LLM stack look like?**
-*Type: Paragraph*
+*Type: Paragraph · Required*
 *(Description: "Which models, APIs, frameworks, databases, evaluation tools, monitoring tools, etc. do you currently use?")*
 *High-value question — the gap between "OpenAI + Claude + Gemini + LangChain + RAG + custom evals" and "OpenAI API + nothing else" tells you a lot about sophistication and what's already solved.*
 
 **Q5. How do you decide which model to use for a particular task?**
-*Type: Paragraph*
-*Deliberately open — doesn't suggest "cost/latency/accuracy" as the framing, so you see their actual mental model instead of them reflecting your own options back at you.*
+*Type: Paragraph · Required*
+*Deliberately open — doesn't suggest "cost/latency/accuracy" as the framing, so you see their actual mental model instead of them reflecting your own options back at you. One of the highest-value questions in the form — this is the one to read closely, not skim.*
 
 **Q6. Do you use one model for everything, or different models for different tasks?**
-*Type: Multiple choice*
+*Type: Multiple choice · Required*
 - Mostly one model
 - Different models for different tasks
 - We experiment with multiple models but haven't standardized
 - Not sure / depends
 
 **Q6a. If you use different models, what makes you choose one over another?**
-*Type: Paragraph (optional)*
+*Type: Paragraph · Optional*
 *(Self-skippable by anyone who answered "mostly one model" to Q6 — no branching needed, it just won't apply to them.)*
 
 *Navigation: continue to Section: Pain discovery*
@@ -111,11 +111,11 @@ the dedicated field at the end instead). "Limit to 1 response" → your call.
 *(The most important section in the survey.)*
 
 **Q7. What is the biggest challenge you currently face when building with LLMs?**
-*Type: Paragraph*
-*No options offered — listing "cost / latency / hallucination / reliability" here would suggest the answer instead of discovering it. This is qualitative; Q8 gets you the quantitative cut on the same topic.*
+*Type: Paragraph · Required*
+*No options offered — listing "cost / latency / hallucination / reliability" here would suggest the answer instead of discovering it. This is qualitative; Q8 gets you the quantitative cut on the same topic. One of the six most important questions in the form.*
 
 **Q8. Which of these problems have you personally experienced?**
-*Type: Checkboxes*
+*Type: Checkboxes · Required*
 - Unexpected/inaccurate outputs
 - Hallucinations
 - High API/model costs
@@ -128,11 +128,16 @@ the dedicated field at the end instead). "Limit to 1 response" → your call.
 - Prompt maintenance
 - Data/privacy concerns
 - Monitoring/observability
-- None of these
 - Other
 
+*No "None of these" option — Google Forms checkboxes can't easily be made
+mutually exclusive against the rest of the list, so a "none" option can't be
+enforced as exclusive and would just be noise. Q7 already captures "nothing
+notable" implicitly (a short or empty-feeling answer there), so it's not lost
+information, just not duplicated here.*
+
 **Q9. How often do problems with AI output or AI system behavior require you to intervene manually?**
-*Type: Multiple choice*
+*Type: Multiple choice · Required*
 - Never
 - Rarely
 - Sometimes
@@ -146,7 +151,7 @@ the dedicated field at the end instead). "Limit to 1 response" → your call.
 ## — SECTION: Real-world impact —
 
 **Q10. Have you ever had an AI-generated response cause a problem in development or production?**
-*Type: Multiple choice*
+*Type: Multiple choice · Required*
 - Yes
 - No
 - Not sure
@@ -163,9 +168,9 @@ the dedicated field at the end instead). "Limit to 1 response" → your call.
 *(Only reached if Q10 = "Yes")*
 
 **Q11. What happened?**
-*Type: Paragraph*
+*Type: Paragraph · Required*
 *(Description: "What was the issue, how was it discovered, and what did you do afterward?")*
-*Deliberately doesn't say "hallucination" — let them describe it in their own words. What they call it, and what they emphasize, is itself data.*
+*Deliberately doesn't say "hallucination" — let them describe it in their own words. What they call it, and what they emphasize, is itself data. Required even though it's only reached via the "Yes" branch — Google Forms allows requiring a question on a conditionally-reached section, and this is too valuable to risk losing to a skip.*
 
 *Navigation: continue to Section: Current workaround*
 
@@ -178,11 +183,12 @@ section. Purpose is not to map competitors; purpose is to find out whether
 people are already spending real time/money solving this.)*
 
 **Q12. How do you currently prevent, detect, or fix problems with your AI system?**
-*Type: Paragraph*
+*Type: Paragraph · Required*
 *(Description: "For example: testing, human review, evaluation frameworks, monitoring, another AI model, prompt changes, changing models, custom rules, source checking, or doing nothing. Please describe what you actually do today.")*
+*One of the six most important questions in the form.*
 
 **Q13. What tools or services do you currently use for this?**
-*Type: Checkboxes*
+*Type: Checkboxes · Required*
 - Custom/internal tooling
 - OpenAI tools
 - Anthropic tools
@@ -198,8 +204,8 @@ people are already spending real time/money solving this.)*
 - Other
 
 **Q14. What is frustrating about your current approach?**
-*Type: Paragraph*
-*Possibly the single best question in the form. "We have hallucinations" is weak signal. "We have 3 engineers manually reviewing outputs every week and it still misses edge cases" is a business opportunity. This question is what surfaces the second kind of answer.*
+*Type: Paragraph · Required*
+*Possibly the single best question in the form. "We have hallucinations" is weak signal. "We have 3 engineers manually reviewing outputs every week and it still misses edge cases" is a business opportunity. This question is what surfaces the second kind of answer. One of the six most important questions in the form.*
 
 *Navigation: continue to Section: Priorities*
 
@@ -208,14 +214,14 @@ people are already spending real time/money solving this.)*
 ## — SECTION: Priorities —
 
 **Q15. Rank these based on what matters most when building/deploying AI features (1 = most important).**
-*Type: Multiple choice grid*
+*Type: Multiple choice grid · Required*
 *Rows: Accuracy / Reliability / Cost / Latency / Explainability / Developer experience / Privacy-security / Scalability*
 *Columns: 1–8*
-*Enable: "Limit to one response per column" and "Require a response in each row"*
+*Enable: "Limit to one response per column" AND "Require a response in each row" — together these force every respondent to give a genuine 1st-priority → 8th-priority ranking rather than leaving gaps or double-ranking.*
 
 **Q16. If you could eliminate ONE recurring problem from your AI development workflow, what would it be?**
-*Type: Paragraph*
-*Personally the highest-leverage single question to highlight when you read results — it forces a prioritization the checkbox list (Q8) can't.*
+*Type: Paragraph · Required*
+*The highest-leverage single question to highlight when you read results — Q8's checkboxes let someone select everything, this forces an actual choice. One of the six most important questions in the form.*
 
 *Navigation: continue to Section: Optional interview*
 
@@ -224,7 +230,7 @@ people are already spending real time/money solving this.)*
 ## — SECTION: Optional interview —
 
 **Q17. Would you be open to a short 15-minute conversation about your experience building with AI?**
-*Type: Multiple choice*
+*Type: Multiple choice · Required*
 - Yes
 - Maybe
 - No
@@ -243,7 +249,8 @@ people are already spending real time/money solving this.)*
 *(Only reached if Q17 = "Yes" or "Maybe")*
 
 **Q18. Email**
-*Type: Short answer*
+*Type: Short answer · Optional*
+*(Left optional even though Q17 was "Yes"/"Maybe" — don't force it; someone who reconsiders at this point should still be able to submit the rest of their answers.)*
 
 *Navigation: continue to Section: Thanks*
 
@@ -257,6 +264,45 @@ people are already spending real time/money solving this.)*
 *(Form-ending section — no further navigation needed.)*
 
 ---
+
+## How to distribute
+
+Don't just drop the link with "guys fill this form." The framing matters as
+much as the questions — it needs to read as research, not a pitch, or you'll
+bias every answer that follows.
+
+> Hey everyone! 👋
+>
+> I'm doing a short 5-minute research survey to understand how developers/teams
+> are actually building and shipping AI/LLM features today.
+>
+> This isn't a product pitch or sales survey — I'm specifically trying to
+> understand real workflows, problems, and how people currently solve them.
+>
+> If you're actively building with LLMs, would really appreciate your input.
+>
+> **5 mins:** [FORM LINK]
+>
+> Feel free to share it with another AI builder as well.
+
+Don't say, anywhere in the post or in replies to it:
+- "We're building an AI infrastructure startup…"
+- "We're solving hallucinations…"
+- "Help us validate our idea…"
+
+Any of those immediately biases responses toward confirming what you said
+rather than reporting what's actually true for them.
+
+## Target response count
+
+- **Minimum: 30** — enough to see obvious patterns, not enough for real segmentation.
+- **Good: 50–75** — segmentation (production vs. prototype, solo vs. team, by industry) starts being meaningful.
+- **Strong: 100+** — solid comparisons across every cut in Q1–Q3.
+
+100 random responses are not better than 30 from people who actually build
+and ship AI features — quality of respondent matters more than raw count.
+Distributing in an AI builders community (rather than a general audience) is
+what makes even 30–50 responses usable.
 
 ## How to analyze responses
 
@@ -277,29 +323,67 @@ Four patterns fall out of a matrix like this:
 - **High frequency + low pain** — people don't actually care, skip it
 - **High pain + already well-served by existing tools** — hard to displace
 - **High pain + a genuinely terrible existing workaround** — this is the one
-  you want. It's the gap between "we have hallucinations" and "3 engineers
-  manually review outputs weekly and still miss edge cases" — the second
-  tells you there's a business opportunity, the first alone doesn't.
+  you want.
 
 Read Q7, Q14, and Q16 (the open-ended ones) before you look at the checkbox
 percentages — a specific, detailed pain description is stronger signal than a
 checked box, and it's where the real segmentation (by team size, industry,
 maturity) tends to become visible.
 
-## The three-round plan
+### Weak signal vs. strong signal — read every open-ended answer against this
 
-1. **Round 1 (this form): discovery.** No product mentioned. Answers this
-   survey's own real question — what's actually painful and how much.
-2. **Round 2: concept validation.** Once the pain matrix points at a specific
-   hypothesis (routing, verification, or something else entirely that showed
-   up in Q7/Q16), reveal *that* concept specifically and gauge reaction — see
-   `ai-builders-google-form-round2-concept-and-pricing.md` for the
-   already-drafted reveal copy and reaction questions (Q5/Q6-style
-   "would this help" questions, still no pricing yet).
-3. **Round 3: pricing / willingness to pay.** Only after Round 2 confirms the
-   concept lands — the pricing questions from the earlier draft live in the
-   same Round 2 file, ready to split out once you get there.
+> "We sometimes get hallucinations." — **weak.** Pain, no depth.
+>
+> "We have two developers manually reviewing AI-generated reports every week
+> because our automated evaluation misses edge cases." — **strong.** This one
+> answer contains pain, frequency, human effort, an existing (inadequate)
+> workaround, and a plausible buyer, all in one sentence.
 
-Don't skip straight to Round 3 material with Round 1 data — that's the
-mistake this rewrite is specifically avoiding: asking people to validate an
-idea you've already decided on, instead of letting the data pick the idea.
+If most of your Q11/Q12/Q14 answers read like the first example, the pain is
+real but shallow — keep digging via the 10–15 follow-up interviews before
+committing to a hypothesis. If they read like the second, you likely have
+enough to move to Round 2.
+
+### Optional deeper scoring, once you have a shortlist of pains
+
+Don't rely on percentages alone. For each candidate pain theme, score 0–5 on:
+
+| Factor | Question to ask of the data |
+|---|---|
+| Frequency | How often does this come up (Q9, and how often it appears across Q7/Q8)? |
+| Severity | How damaging is it when it happens (Q11)? |
+| Manual effort | How much human work currently goes into it (Q12)? |
+| Money | Is money already being spent on it (Q13 — paid tools in use)? |
+| Existing solution strength | How good are the current tools/workarounds (Q13, described quality in Q12/Q14) — score this one *inverted*, since a strong existing solution works against you |
+| Frustration | How frustrated are people, in their own words (Q14)? |
+| Urgency | Do they talk about wanting to solve it now, or "someday" (Q14/Q16)? |
+
+`Opportunity score = Frequency + Severity + Effort + Money + Frustration + Urgency − Existing solution strength`
+
+The exact formula matters less than the discipline it forces: don't let a
+high percentage alone (e.g. "70% mentioned hallucinations") make the decision
+— check it against effort, money already spent, and how bad the current
+workarounds actually are.
+
+## The recommended funnel
+
+1. **Round 1 (this form): discovery.** No product mentioned. Target 50+
+   quality responses from the AI builders community.
+2. **Analyze.** Build the pain matrix + opportunity scores above. Identify the
+   top 2–3 candidate pains — not a single winner yet.
+3. **10–15 follow-up interviews.** Recruit from Q17/Q18 responders plus anyone
+   whose Q11/Q12/Q14 answers were strong-signal. Use
+   `user-interview-guide.md` and `user-interview-tracker.xlsx`, adapted to
+   probe the top 2–3 candidate pains specifically instead of the generic
+   script. This is where you get the *depth* the survey alone can't.
+4. **Choose ONE problem.** If the data points somewhere other than
+   routing/verification, follow the data — abandoning the original idea is
+   the point of doing discovery first, not a failure of it.
+5. **Round 2: concept validation.** Reveal only the chosen hypothesis and
+   gauge reaction — see `ai-builders-google-form-round2-concept-and-pricing.md`.
+6. **Round 3: pricing / willingness to pay.** Only after Round 2 confirms the
+   concept lands.
+
+Survey tells you the problem exists. Interviews tell you how deep it goes.
+The product decision needs both, not the survey alone — don't skip straight
+from Round 1 percentages to a product decision.

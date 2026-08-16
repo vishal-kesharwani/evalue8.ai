@@ -56,9 +56,15 @@ Validation approach settled into a **3-round funnel** rather than one survey, to
 - **Round 2 — concept validation** (`ai-builders-google-form-round2-concept-and-pricing.md`, held back): reveal only whichever hypothesis Round 1's pain matrix points at.
 - **Round 3 — pricing**: only after Round 2 confirms the concept lands.
 
+### Weeks 7–8 refinement (2026-08-15)
+
+Round 1 form finalized: every question marked Required/Optional for Google Forms, "None of these" dropped from Q8 (can't be enforced as exclusive against other checkboxes there), a distribution message template that avoids biasing responses, response-count targets (30 min / 50-75 good / 100+ strong, from a real AI-builders audience not a general one), and an analysis section with a pain matrix, a weak-vs-strong signal calibration example, and an optional 0-5 opportunity-scoring framework (`Frequency + Severity + Effort + Money + Frustration + Urgency − Existing solution strength`).
+
+Funnel is now: Round 1 (50+ responses) → build pain matrix/scores → shortlist top 2-3 pains → 10-15 follow-up interviews on the shortlist → choose ONE problem → Round 2 concept validation → Round 3 pricing. Interviews sit *between* Round 1 and Round 2, not as a parallel track — survey gives breadth, interviews give depth, the product decision needs both.
+
 ## What's next
 
-Send Round 1 to the AI builders community and/or run 1:1 interviews (needs you — I can't reach real people). Read results as a pain matrix (pain × frequency × current workaround × existing tool coverage — see the analysis section in `ai-builders-google-form.md`), not raw percentages. That matrix picks which hypothesis Round 2 reveals — don't skip straight to Round 2/3 material. Once the beachhead market, pricing, and verification-domain questions resolve (`PRD.md` §33-34), the next engineering step is Phase 3's verification MVP (Weeks 9–12), but per `PRD.md` §31 that shouldn't start until validation picks a domain.
+Build Round 1 in Google Forms and post it to the AI builders community (needs you — I can't reach real people or post to a community). Once 50+ responses land, read them as a pain matrix, not raw percentages — see the analysis section in `ai-builders-google-form.md`. Don't skip straight to Round 2/3 material or to the beachhead/pricing/verification-domain decisions off survey data alone; the 10-15 follow-up interviews come first. Once those decisions resolve (`PRD.md` §33-34), the next engineering step is Phase 3's verification MVP (Weeks 9–12), but per `PRD.md` §31 that shouldn't start until validation picks a domain.
 
 Also still open: if a real Anthropic/OpenAI key becomes available, worth a quick pass to confirm the live classifier path (not just its fallback) actually works end-to-end — untested so far.
 

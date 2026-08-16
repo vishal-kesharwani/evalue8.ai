@@ -50,12 +50,13 @@ an idea nobody had validated yet.
 - [x] 1:1 interview guide (`docs/user-interview-guide.md`) — PRD.md §32 questions with probes, logistics, opening/closing scripts
 - [x] Outreach templates (`docs/interview-outreach-templates.md`) — for developer friends, cold outreach to small teams/startups, warm intros, follow-ups
 - [x] Response tracker (`docs/user-interview-tracker.xlsx`) — Outreach + Interviews + auto-computing Summary sheets
-- [x] **Round 1 discovery survey** (`docs/ai-builders-google-form.md`) — pure pain-discovery, zero product/pricing mentions, ready to paste into Google Forms, includes a pain-matrix analysis framework
+- [x] **Round 1 discovery survey** (`docs/ai-builders-google-form.md`) — pure pain-discovery, zero product/pricing mentions, ready to paste into Google Forms; every question marked Required/Optional, "None of these" dropped from Q8 (unenforceable as exclusive in Google Forms checkboxes), includes distribution message template, response-count targets (30 min / 50-75 good / 100+ strong), a pain matrix, a weak-vs-strong signal calibration example, and an optional 0-5 opportunity-scoring framework
 - [x] **Round 2/3 concept + pricing survey** (`docs/ai-builders-google-form-round2-concept-and-pricing.md`) — drafted but explicitly held back until Round 1's data picks a hypothesis to validate
-- [ ] **Actually send Round 1 to the AI builders community and/or run 1:1 interviews** — this needs you; I can't reach real people or post to a community
-- [ ] Read Round 1 results, build the pain matrix, decide which hypothesis (routing / verification / other) Round 2 should reveal
-- [ ] Send Round 2 (concept validation, no pricing) to responders who opted into follow-up
-- [ ] Only then: Round 3 pricing, beachhead market decision, verification domain decision (see open questions in `PROJECT.md`) — don't decide off a small or single-round sample
+- [ ] **Actually build this in Google Forms and post it to the AI builders community** — this needs you; I can't reach real people or post to a community
+- [ ] Once 50+ responses land: build the pain matrix + opportunity scores, shortlist top 2-3 candidate pains
+- [ ] Run 10-15 follow-up interviews on the shortlist (adapt `user-interview-guide.md` to probe those specific pains, not the generic script)
+- [ ] Choose ONE problem from combined survey + interview signal, then send Round 2 (concept validation, no pricing) to responders who opted into follow-up
+- [ ] Only then: Round 3 pricing, beachhead market decision, verification domain decision (see open questions in `PROJECT.md`) — don't decide off survey percentages alone
 
 ## Later — Weeks 9–12: Verification MVP
 

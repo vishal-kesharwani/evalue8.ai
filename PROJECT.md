@@ -60,6 +60,8 @@ Validation approach settled into a **3-round funnel** rather than one survey, to
 
 Round 1 form finalized: every question marked Required/Optional for Google Forms, "None of these" dropped from Q8 (can't be enforced as exclusive against other checkboxes there), a distribution message template that avoids biasing responses, response-count targets (30 min / 50-75 good / 100+ strong, from a real AI-builders audience not a general one), and an analysis section with a pain matrix, a weak-vs-strong signal calibration example, and an optional 0-5 opportunity-scoring framework (`Frequency + Severity + Effort + Money + Frustration + Urgency − Existing solution strength`).
 
+Then shortened further into the actual built form: 6 sections, Q1-Q16, fully linear (no conditional branching) for a guaranteed ~5-minute completion. Traded away the incident-narrative question ("what happened") and the specific tools-used checklist (LangSmith/Langfuse/etc.) for brevity — reference doc updated to route that signal through the remaining free-text answers (Q7/Q11/Q12) instead, and to flag it explicitly so it's a conscious trade, not a silent loss.
+
 Funnel is now: Round 1 (50+ responses) → build pain matrix/scores → shortlist top 2-3 pains → 10-15 follow-up interviews on the shortlist → choose ONE problem → Round 2 concept validation → Round 3 pricing. Interviews sit *between* Round 1 and Round 2, not as a parallel track — survey gives breadth, interviews give depth, the product decision needs both.
 
 ## What's next
